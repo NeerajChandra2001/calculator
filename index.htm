@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./AgeChecker.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+       
+        <!-- <link rel="stylesheet" href="./script.js"> -->
+</head>
+<body>
+    <!-- Calculator Body -->
+<div class="calc-body">
+
+    <!-- Calculator Display Screen -->
+    <div class="calc-screen">
+        <!-- <div id="calc-operation">1234 + 567 + </div>
+        <div id="calc-typed">890</div> -->
+        <input type="text" id="result" class="form-control" placeholder="Enter">
+    </div>
+    
+    <!-- Calculator Buttons -->
+    <div class="calc-button-row">
+        <button id="seven" onclick="displayNum(7)">7</button>
+        <button id="eight" onclick="displayNum(8)">8</button>
+        <button id="nine" onclick="displayNum(9)">9</button>
+        <button id="mul" onclick="displayNum('*')" class="opt">&#215;</button>
+
+        <button id="four"onclick="displayNum(4)">4</button>
+        <button id="five"onclick="displayNum(5)">5</button>
+        <button id="six"onclick="displayNum(6)">6</button>
+        <button id="minus"onclick="displayNum('-')" class="opt">&#8722;</button>
+
+        <button id="one"onclick="displayNum(1)">1</button>
+        <button id="two"onclick="displayNum(2)">2</button>
+        <button id="three"onclick="displayNum(3)">3</button>
+        <button id="plus" onclick="displayNum('+')"class="opt">&#43;</button>
+
+
+        <button id="zero"onclick="displayNum(0)">0</button>
+        <button id="clear"onclick="clearBox()" class="ac">AC</button>
+
+       
+        <button id="division"onclick="displayNum('/')" class="opt">&#247;</button>
+        <button id="equal"onclick="evaluateExpression('')" class="opt">&#61;</button>
+
+        <button id="del" onclick="removeLast()">&#9003;</button>
+
+       
+        
+        
+    </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
